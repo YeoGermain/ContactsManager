@@ -4,7 +4,7 @@ public class Contact {
     String phoneNumber;
 
     //Constructeur de la classe Contact
-    public void contact() {
+    public Contact() {
         this.name = "";
         this.phoneNumber = "";
     }
