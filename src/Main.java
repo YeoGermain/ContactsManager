@@ -36,9 +36,11 @@ public class Main {
 
         //Déclaration d'une variable initialisée avec le nom à rechercher
         String nom = "Caller";
+
         //Recherche du nom dans la liste des contacts
         //Déclaration d'une variable de type contact initialisée avec le resultat de la recherche
         Contact result = myContactsManager.searchContact(nom);
+
         //Vérification de la variable "result" et affichage du numéro de téléphone du contact trouvé
         if(result == null) {
             System.out.println("Contact introuvable");
