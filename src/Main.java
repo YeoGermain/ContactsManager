@@ -1,17 +1,26 @@
+/**
+ * Classe principale du programme.
+ */
 public class Main {
-    public static void main(String [] args) {
 
-        //Création d'une nouvelle instance de la classe ContactManager
+    /**
+     * Point d'entrée du programme.
+     *
+     * @param args Arguments de la ligne de commande
+     */
+    public static void main(String[] args) {
+
+        // Création d'une nouvelle instance de ContactsManager
         ContactsManager myContactsManager = new ContactsManager();
 
-        //Création des contacts
+        // Création des contacts
         Contact contactSamuel = new Contact();
         Contact contactYeo = new Contact();
         Contact contactSita = new Contact();
         Contact contactCaller = new Contact();
         Contact contactRachid = new Contact();
 
-        //Assignation des noms et des numéros de téléphone de chaque ami
+        // Attribution des informations des contacts
         contactSamuel.name = "Samuel";
         contactSamuel.phoneNumber = "093576563";
 
@@ -27,25 +36,25 @@ public class Main {
         contactRachid.name = "Rachid";
         contactRachid.phoneNumber = "053578368";
 
-        //Enregistrement de chaque contact
+        // Ajout des contacts
         myContactsManager.addContact(contactSamuel);
         myContactsManager.addContact(contactYeo);
         myContactsManager.addContact(contactSita);
         myContactsManager.addContact(contactCaller);
         myContactsManager.addContact(contactRachid);
 
-        //Déclaration d'une variable initialisée avec le nom à rechercher
+        // Nom à rechercher
         String nom = "Caller";
 
-        //Recherche du nom dans la liste des contacts
-        //Déclaration d'une variable de type contact initialisée avec le resultat de la recherche
+        // Recherche du contact
         Contact result = myContactsManager.searchContact(nom);
 
-        //Vérification de la variable "result" et affichage du numéro de téléphone du contact trouvé
-        if(result == null) {
+        // Affichage du résultat
+        if (result == null) {
             System.out.println("Contact introuvable");
-        }else {
-            System.out.println("Contact trouvé! numéro de téléphone: " + result.phoneNumber);
+        } else {
+            System.out.println("Contact trouvé ! numéro de téléphone : "
+                    + result.phoneNumber);
         }
     }
 }

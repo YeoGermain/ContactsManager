@@ -1,9 +1,19 @@
+/**
+ * Classe représentant un contact.
+ * Un contact possède un nom et un numéro de téléphone.
+ */
 public class Contact {
-    //Attributs de la classe Contact
+
+    /** Nom du contact */
     String name;
+
+    /** Numéro de téléphone du contact */
     String phoneNumber;
 
-    //Constructeur de la classe Contact
+    /**
+     * Constructeur par défaut de la classe Contact.
+     * Initialise le nom et le numéro à une chaîne vide.
+     */
     public Contact() {
         this.name = "";
         this.phoneNumber = "";
