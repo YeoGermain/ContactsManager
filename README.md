@@ -40,7 +40,9 @@ Permet de :
 ____Méthodes principales :____
 
 -addContact(Contact contact)
+
 -searchContact(String searchName)
+
 -Main
 
 ____Classe principale du programme.____
