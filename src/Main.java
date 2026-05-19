@@ -53,8 +53,7 @@ public class Main {
         if (result == null) {
             System.out.println("Contact introuvable");
         } else {
-            System.out.println("Contact trouvé ! numéro de téléphone : "
-                    + result.phoneNumber);
+            System.out.println("Contact trouvé ! numéro de téléphone de " + nom + ": " + result.phoneNumber);
         }
     }
 }
